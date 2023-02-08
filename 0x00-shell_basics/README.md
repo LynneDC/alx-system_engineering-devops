@@ -1,1 +1,1 @@
-Display the contents list fo your current directory ina long format
+Move the file betty from /tmp/ to /tmp/my_first_directory
