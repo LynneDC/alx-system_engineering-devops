@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir school|hello
+mkdir -m 751 my-dir
