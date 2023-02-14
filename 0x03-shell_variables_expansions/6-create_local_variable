@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "The value of my_variable is: $my_variable"
+echo "The value of Best is: $Best"
