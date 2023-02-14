@@ -1,2 +1,2 @@
 #!/bin/bash
-window.BEST = "School"
+BEST=School
