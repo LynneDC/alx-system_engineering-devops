@@ -4,5 +4,5 @@ x=1
 until [ $x -gt 10 ]
 do
 	echo best school
-	x=`expr $x + 1`
+	((x++))	
 done
