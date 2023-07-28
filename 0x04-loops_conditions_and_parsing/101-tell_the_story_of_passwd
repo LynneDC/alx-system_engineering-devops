@@ -1,18 +1,12 @@
 #!/usr/bin/env bash
-#  Bash script that displays the content of the file /etc/passwd
 
+# Set the input file path
 myfile="/etc/passwd"
-f1=""
-f2=""
-f3=""
-while IFS= read -r line
-do
-	fi="$(echo "$line" | cut -d":" -f1)"
-	fi="$(echo "$line" | cut -d":" -f4)"
-	fi="$(echo "$line" | cut -d":" -f6)"
- 	fi="$(echo "$line" | cut -d":" -f7)"
-	fi="$(echo "$line" | cut -d":" -f3)"
-	fi="$(echo "$line" | cut -d":" -f2)"
-	fi="$(echo "$line" | cut -d":" -f5)"
-	echo "The user ${f1} is part of the ${f2} gang, lives in ${f3} and rides ${f5} place is protected by the passcode ${f6}, more info about the user here: ${f17}"
+
+# Read /etc/passwd line by line and display user information
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7; do
+  echo "The user ${f1} is part of the ${f4} gang, lives in ${f6} and rides ${f7}."
+  echo "${f3}'s place is protected by the passcode ${f2}, more info about the user here: ${f5}"
+  echo
 done < "$myfile"
+
