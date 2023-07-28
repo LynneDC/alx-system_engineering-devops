@@ -2,20 +2,20 @@
 #  Bash script that displays the content of the file /etc/passwd
 
 myfile="/etc/passwd"
-f1="$USERNAME"
-f2="$GROUP_ID"
-f3="$HOME_DIRECTORY"
-f4="$COMMAND"
-f5="$SHELL"
-f6="$USER"
-f7="$ID"
-f8="$PASSWORD"
-
 
 while IFS= read -r line
 do
-	echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND/$SHELL"
-	echo "$USER $ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER $ID INFO"
-	#echo "$line" | cut -d":"
-
+	f1=""
+	f2=""
+	f3=""
+ 	f5=""
+	
+	fi="(echo "$line" | cut -d":" -f1)"
+	fi="(echo "$line" | cut -d":" -f4)"
+	fi="(echo "$line" | cut -d":" -f6)"
+ 	fi="(echo "$line" | cut -d":" -f7)"
+	fi="(echo "$line" | cut -d":" -f3)"
+	fi="(echo "$line" | cut -d":" -f2)"
+	fi="(echo "$line" | cut -d":" -f5)"
+	echo "The user ${f1} is part of the ${f2} gang, lives in ${f3} and rides ${f5} place is protected by the passcode ${f6}, more info about the user here: ${f17}"
 done < "$myfile"
