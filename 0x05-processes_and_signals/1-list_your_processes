@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 #lists all the running processes
-
-top
+ps -u
