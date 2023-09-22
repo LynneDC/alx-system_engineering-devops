@@ -1,135 +1,44 @@
+Certainly! Here's a README.md file for your project:
 
-```html
-<!DOCTYPE html>
-<html>
+```markdown
+# SSH Configuration Project
 
-<head>
-    <title>0x0B. SSH DevOps Project</title>
-</head>
+This project focuses on SSH configuration and key management. It includes various tasks related to SSH key pair generation, client configuration, and server access setup.
 
-<body>
+## Project Structure
 
-    <h1>0x0B. SSH DevOps Project</h1>
+The project is organized into several tasks, each with its own requirements and objectives:
 
-    <h2>Background Context</h2>
+### Task 0: Use a Private Key
+- This task involves creating a Bash script that connects to a remote server using an SSH private key.
+- Requirements include using SSH single-character flags and connecting as the user "ubuntu."
 
-    <p>
-        Along with this project, you have been attributed an Ubuntu server, living in a datacenter far far away. Like
-        level 2 of the application process, you will connect using ssh. But contrary to level 2, you will not connect
-        using a password but an RSA key. We’ve configured your server with the public key you created in the first task
-        of a previous project shared in your intranet profile.
-    </p>
+### Task 1: Create an SSH Key Pair
+- In this task, you'll create an RSA key pair with specific requirements, including key name and passphrase protection.
 
-    <p>
-        You can access your server information in the my servers section of the intranet, each line with contains the IP
-        and username you should use to connect via ssh.
-    </p>
+### Task 2: Client Configuration File
+- Configure the SSH client on your local machine to use the private key and refuse password authentication.
 
-    <p><strong>Note:</strong> Your server is configured with an Ubuntu 20.04 LTS environment.</p>
+### Task 3: Let Me In!
+- Add an SSH public key to your server to allow remote access via the "ubuntu" user.
 
-    <h2>Resources</h2>
+### Task 4: Client Configuration File (with Puppet) [Advanced]
+- Use Puppet to automate the configuration of the SSH client, making it use the private key and reject password authentication.
 
-    <p>Read or watch:</p>
+## Learning Objectives
+By completing these tasks, you will gain knowledge and skills in the following areas:
+- Understanding what a server is and where servers are typically located.
+- Knowledge of SSH and how to create and use SSH key pairs.
+- SSH client configuration to enhance security.
+- Automation of SSH client configuration using Puppet (Advanced).
 
-    <ul>
-        <li><a href="#">What is a (physical) server - text</a></li>
-        <li><a href="#">What is a (physical) server - video</a></li>
-        <li><a href="#">SSH essentials</a></li>
-        <li><a href="#">SSH Config File</a></li>
-        <li><a href="#">Public Key Authentication for SSH</a></li>
-        <li><a href="#">How Secure Shell Works</a></li>
-        <li><a href="#">SSH Crash Course (Long, but highly informative. Watch this if configuring SSH is still
-                confusing. It may be helpful to watch at x1.25 speed or above.)</a></li>
-    </ul>
+## Getting Started
+Follow the instructions provided in each task's directory to complete the objectives. Use the provided Bash scripts and configuration files to meet the requirements.
 
-    <p>For reference:</p>
+## Author
+This project was created by Sylvain Kalache.
 
-    <ul>
-        <li><a href="#">Understanding the SSH Encryption and Connection Process</a></li>
-        <li><a href="#">Secure Shell Wiki</a></li>
-        <li><a href="#">IETF RFC 4251 (Description of the SSH Protocol)</a></li>
-        <li><a href="#">Internet Engineering Task Force</a></li>
-        <li><a href="#">Request for Comments</a></li>
-    </ul>
+## Copyright Information
+This project is copyrighted by ALX. Any form of plagiarism or unauthorized sharing of this content is strictly prohibited and may result in removal from the program.
 
-    <p>man or help:</p>
-
-    <ul>
-        <li><a href="#">ssh</a></li>
-        <li><a href="#">ssh-keygen</a></li>
-        <li><a href="#">env</a></li>
-    </ul>
-
-    <h2>Learning Objectives</h2>
-
-    <p>
-        At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-    </p>
-
-    <ul>
-        <li>What is a server</li>
-        <li>Where servers usually live</li>
-        <li>What is SSH</li>
-        <li>How to create an SSH RSA key pair</li>
-        <li>How to connect to a remote host using an SSH RSA key pair</li>
-        <li>The advantage of using #!/usr/bin/env bash instead of /bin/bash</li>
-    </ul>
-
-    <h2>Requirements</h2>
-
-    <h3>General</h3>
-
-    <ul>
-        <li>Allowed editors: vi, vim, emacs</li>
-        <li>All your files will be interpreted on Ubuntu 20.04 LTS</li>
-        <li>All your files should end with a new line</li>
-        <li>A README.md file, at the root of the folder of the project, is mandatory</li>
-        <li>All your Bash script files must be executable</li>
-        <li>The first line of all your Bash scripts should be exactly #!/usr/bin/env bash</li>
-    </ul>
-
-    <h3>Your servers</h3>
-
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Username</th>
-            <th>IP</th>
-            <th>State</th>
-        </tr>
-        <tr>
-            <td>251885-web-01</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <!-- Add more server information as needed -->
-    </table>
-
-    <h2>Tasks</h2>
-
-    <h3>0. Use a private key (mandatory)</h3>
-
-    <p>
-        Write a Bash script that uses ssh to connect to your server using the private key ~/.ssh/school with the user
-        ubuntu.
-    </p>
-
-    <p><strong>Requirements:</strong></p>
-
-    <ul>
-        <li>Only use ssh single-character flags</li>
-        <li>You cannot use -l</li>
-        <li>You do not need to handle the case of a private key protected by a passphrase</li>
-    </ul>
-
-    <p><strong>Example:</strong></p>
-
-    <code>sylvain@ubuntu$ ./0-use_a_private_key</code>
-
-    <!-- Repeat the above structure for other tasks -->
-
-</body>
-
-</html>
-```
+For more information, refer to the project's individual README files in each task directory.
