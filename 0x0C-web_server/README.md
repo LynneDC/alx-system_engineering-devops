@@ -14,7 +14,7 @@
   <li>All your files will be interpreted on Ubuntu 16.04 LTS and checked with Shellcheck</li>
   <li>First line of all your Bash scripts should be <b>#!/usr/bin/env bash</b></li>  
 <hr />
-<h4>TASKS : MANDATORY</h4>
+<h1>TASKS : MANDATORY</h1>
 
 <p><b>0. Transfer a file to your server</b></p>
 <ol>
