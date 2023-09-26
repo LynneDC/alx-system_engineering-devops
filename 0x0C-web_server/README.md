@@ -13,46 +13,43 @@
   <li>Allowed editors: vi, vim, emacs</li>
   <li>All your files will be interpreted on Ubuntu 16.04 LTS and checked with Shellcheck</li>
   <li>First line of all your Bash scripts should be <b>#!/usr/bin/env bash</b></li>  
-<hr />
 <h2>TASKS : MANDATORY</h2>
-
-<h3><b>0. Transfer a file to your server</b></h3>
-<p>
-  <lu>
-    <i>
-      <li>Write a Bash script that transfers a file from our client to a server<li>
-      <li>Accepts 4 parameters</li>
-      <li>scp must transfer the file to the user home directory</li>
-      <li>Strict host key checking must be disabled when using scp</li>
-    </i>
- </lu>
-</p>
+<p><b>0. Transfer a file to your server</b></p>
+<ol>
+  <li>Transfer a file to your server:
+    <ul>
+      <li>Write a Bash script that transfers file from our client to a server</li>
+      <li>Accepts 4 parameters</li></li>
+      <li>scp must transfer the file to the user home directory</a>.</li>
+    </ul>
+  </li>
+</ol>
   
 <p><b>1. Install nginx web server</b></p>
+
 <ol>
   <li>-y on apt-get command:
-    <lu>
+    <ul>
       <li>Install nginx on server listening on port 80</li>
       <li>write a Bash script that configures a new Ubuntu machine</li>
       <li>You can’t use systemctl for restarting nginx</li>
-    </lu>
+    </ul>
   </li>
 </ol>
-
-<p><b>2. Setup a domain name</b></p>
+<p><b>2. Setup a domain name</b></P>
 <ol>
-   <lu>
-     <li>provide the domain name only and configure your DNS records with an A entry </li>
-     <li>When your domain name is setup, please verify the Registrar</li>
-   </lu>
+  <li>
+    <ul>
+      <li>provide domain name and configure your DNS records with an A entry</li>
+      <li>When your domain name is setup, please verify the Registrar</li>      
+    </ul>
+  </li>
 </ol>
-
 <p><b>3. Redirection</b></p>
-
 <ol>
   <li>Readme:
     <ul>
-      <li>Configure your Nginx server so that /redirect_me is redirecting to another pagee</li>
+      <li>Configure Nginx server so that /redirect_me is redirecting to another pagee</li>
       <li>Write Bash script containing commands to automatically configure a Ubuntu machine</li>
       <li><a href="https://stackoverflow.com/questions/26041088/sed-replace-line-with-multiline-variable">Replace a line with multiple lines with sed</a>.</li>
     </ul>
