@@ -16,73 +16,53 @@
 <h2>TASKS : MANDATORY</h2>
 <p><b>0. Transfer a file to your server</b></p>
 <ol>
-  <li>Transfer a file to your server:
-    <ul>
+   <ul>
       <li>Write a Bash script that transfers file from our client to a server</li>
       <li>Accepts 4 parameters</li></li>
       <li>scp must transfer the file to the user home directory</a>.</li>
-    </ul>
-  </li>
+   </ul>
 </ol>
   
 <p><b>1. Install nginx web server</b></p>
 
 <ol>
-  <li>-y on apt-get command:
-    <ul>
+   <ul>
       <li>Install nginx on server listening on port 80</li>
       <li>write a Bash script that configures a new Ubuntu machine</li>
       <li>You can’t use systemctl for restarting nginx</li>
-    </ul>
-  </li>
+   </ul>
 </ol>
 <p><b>2. Setup a domain name</b></P>
 <ol>
-  <li>
-    <ul>
+   <ul>
       <li>provide domain name and configure your DNS records with an A entry</li>
       <li>When your domain name is setup, please verify the Registrar</li>      
-    </ul>
-  </li>
+   </ul>
 </ol>
 <p><b>3. Redirection</b></p>
 <ol>
-  <li>Readme:
-    <ul>
+   <ul>
       <li>Configure Nginx server so that /redirect_me is redirecting to another pagee</li>
       <li>Write Bash script containing commands to automatically configure a Ubuntu machine</li>
       <li><a href="https://stackoverflow.com/questions/26041088/sed-replace-line-with-multiline-variable">Replace a line with multiple lines with sed</a>.</li>
-    </ul>
-  </li>
-</ol>
+   </ul>
+ </ol>
 <p><b>4. Not found page 404</b></p>
 <ol>
-  <li>Configure your Nginx server to have a custom 404 page that contains a string
-    <ul>
+   <ul>
       <li>The page must return an HTTP 404 error code</li>
       <li>configure a brand new Ubuntu machine</li>
-    </ul>
-  </li>
-</ol>
-<h5>TASKS: ADVANCED<h5>
-<p>5. Install Nginx web server (w/ Puppet)</p>
-<li>install and configure an Nginx server using Puppet instead of Bash include resources in your manifest to perform a 301 redirect when querying /redirect_me.
+   </ul>
+ </ol>
+<h2>TASKS: ADVANCED<h5>
+<p><b>5. Install Nginx web server (w/ Puppet)</b></p>
+<ol>
     <ul>
       <li>Nginx should be listening on port 80</li>
       <li>The redirection must be a “301 Moved Permanently”</li>
     </ul>
-  </li>
 </ol>
 
-<p>If text is indented, it is treated as a block quotation, and the final attribution line is handled automatically:</p>
-<blockquote>
-Should array indices start at 0 or 1?
-My suggested compromise of 0.5 was rejected without, I thought, proper consideration.
--- Stan Kelly-Bootle</blockquote>
-
-<p>reST uses :: prior to a pre-formatted code block:</p>
 <pre class="literal-block">
-Y = lambda f: (lambda x: f(x(x)))(lambda x: f(x(x)))
 </pre>
-
-<p>Multi-line text can<br/>span in tables<br/>with a pipe character.</p>I
+<p><br/><br/></p>
