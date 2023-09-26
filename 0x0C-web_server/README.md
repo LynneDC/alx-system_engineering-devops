@@ -7,24 +7,24 @@
       <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04">HOW TO CONFIGURE NGINX</a>.</li>
       <li><a href="https://landingi.com/help/domains-vs-subdomains/">ROOT AND SUB DOMAIN</a>.</li>
     </em>
-<h3>Requirements</h3>
-<p>
+<h2>Requirements</h2>
+</p>
 <ul>
   <li>Allowed editors: vi, vim, emacs</li>
   <li>All your files will be interpreted on Ubuntu 16.04 LTS and checked with Shellcheck</li>
   <li>First line of all your Bash scripts should be <b>#!/usr/bin/env bash</b></li>  
 <hr />
-<h1>TASKS : MANDATORY</h1>
+<h2>TASKS : MANDATORY</h2>
 
 <p><b>0. Transfer a file to your server</b></p>
-<ol>
-   <lu>
+<lu>
+    <i>
       <li>Write a Bash script that transfers a file from our client to a server<li>
       <li>Accepts 4 parameters</li>
       <li>scp must transfer the file to the user home directory</li>
       <li>Strict host key checking must be disabled when using scp</li>
-   </lu>
-</ol>
+    </i>
+</lu>
   
 <p><b>1. Install nginx web server</b></p>
 <ol>
