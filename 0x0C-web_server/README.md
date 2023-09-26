@@ -1,6 +1,6 @@
 <h1>WEB SERVER</h1>
-<h2>Resources</h2>
-<p>How the web works <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">HOW WEB WORKS</a>.</p>
+<h2><center>Resources</center></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">HOW WEB WORKS</a>.</p>
 <h3>Sub-heading</h3>
 <p>Paragraphs are separated by a blank line.</p>
 <p>Text attributes <em>emphasis</em>, <strong>strong emphasis</strong>, <code>monospace</code>.</p>
