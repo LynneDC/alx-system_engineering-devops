@@ -17,15 +17,32 @@
 <h4>TASKS : MANDATORY</h4>
 
 <p><b>0. Transfer a file to your server</b></p>
-  <li>Write a Bash script that transfers a file from our client to a server<li>
-
+<ol>
+   <lu>
+      <li>Write a Bash script that transfers a file from our client to a server<li>
+      <li>Accepts 4 parameters</li>
+      <li>scp must transfer the file to the user home directory</li>
+      <li>Strict host key checking must be disabled when using scp</li>
+   </lu>
+</ol>
+  
 <p><b>1. Install nginx web server</b></p>
 <ol>
-  <li>Install nginx on server listening on port 80</li>
+  <li>-y on apt-get command:
+    <lu>
+      <li>Install nginx on server listening on port 80</li>
+      <li>write a Bash script that configures a new Ubuntu machine</li>
+      <li>You can’t use systemctl for restarting nginx</li>
+    </lu>
+  </li>
 </ol>
+
 <p><b>2. Setup a domain name</b></p>
 <ol>
-  <li>provide the domain name only and configure your DNS records with an A entry </li>
+   <lu>
+     <li>provide the domain name only and configure your DNS records with an A entry </li>
+     <li>When your domain name is setup, please verify the Registrar</li>
+   </lu>
 </ol>
 
 <p><b>3. Redirection</b></p>
@@ -38,7 +55,9 @@
       <li><a href="https://stackoverflow.com/questions/26041088/sed-replace-line-with-multiline-variable">Replace a line with multiple lines with sed</a>.</li>
     </ul>
   </li>
+</ol>
 <p><b>4. Not found page 404</b></p>
+<ol>
   <li>Configure your Nginx server to have a custom 404 page that contains a string
     <ul>
       <li>The page must return an HTTP 404 error code</li>
