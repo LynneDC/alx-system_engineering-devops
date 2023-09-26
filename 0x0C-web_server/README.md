@@ -16,15 +16,17 @@
 <hr />
 <h2>TASKS : MANDATORY</h2>
 
-<p><b>0. Transfer a file to your server</b></p>
-<lu>
+<h3><b>0. Transfer a file to your server</b></h3>
+<p>
+  <lu>
     <i>
       <li>Write a Bash script that transfers a file from our client to a server<li>
       <li>Accepts 4 parameters</li>
       <li>scp must transfer the file to the user home directory</li>
       <li>Strict host key checking must be disabled when using scp</li>
     </i>
-</lu>
+ </lu>
+</p>
   
 <p><b>1. Install nginx web server</b></p>
 <ol>
