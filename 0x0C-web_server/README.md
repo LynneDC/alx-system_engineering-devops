@@ -1,9 +1,9 @@
 <h1>WEB SERVER</h1>
 <h2><center><i>Resources</i></center></h2>
-<p>
+<p style=font-size: 12px>
 <ul>
    <em>
-      <li style="color: red;"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">HOW WEB WORKS</a>.</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">HOW WEB WORKS</a>.</li>
       <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04">HOW TO CONFIGURE NGINX</a>.</li>
       <li><a href="https://landingi.com/help/domains-vs-subdomains/">ROOT AND SUB DOMAIN</a>.</li>
     </em>
