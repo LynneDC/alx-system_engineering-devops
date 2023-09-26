@@ -1,6 +1,6 @@
 <h1>WEB SERVER</h1>
 <h2><center><i>Resources</i></center></h2>
-<p style=font-size: 12px>
+<p style="color: red;">
 <ul>
    <em>
       <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">HOW WEB WORKS</a>.</li>
