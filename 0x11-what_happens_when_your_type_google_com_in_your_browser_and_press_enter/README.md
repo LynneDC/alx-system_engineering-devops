@@ -6,6 +6,14 @@
 </h1>
 </head>
 <body style="font-family: Verdana, Arial, sans-serif">
+   <h2> DESCRIPTION </h2>
+   <p>
+        In full stack development as  a developer you are supposed to be comfortable to answer this famouse questions "what happens when you type www.google.com" in all layers of development. The side we are tuckling here is:
+   <li> Network</li>
+   <li> Servers </li>
+   <li> Security </li> 
+  </p>
+ 
    <h2 style="color: green; round-color:RED ">
         Background Context
 
