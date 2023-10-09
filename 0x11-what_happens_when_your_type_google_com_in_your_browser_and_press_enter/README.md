@@ -40,16 +40,15 @@
    Write a blog post explaining what happens when you type https://www.google.com in your browser and press Enter.
    <h4> Requirements, your post must cover: </h4>
    <ol>
-   <li> 
-        DNS request
-	TCP/IP
-	Firewall
-	HTTPS/SSL
-	Load-balancer
-	Web server
-	Application server
-	Database
-  </li>
+   <li>DNS request</li>
+   <li> TCP/IP</li>
+   <li> Firewall</li>
+   <li>	HTTPS/SSL</li>
+   <li>	Load-balancer</li>
+   <li>	Web server</li>
+   <li>	Application server</li>
+   <li>	Database</li>
+  
   </ol>
   </p>
   <h3 style="color: #FF645F; margin-left: 40px">
