@@ -67,6 +67,8 @@
    <li> that the application server generates the web page</li>
    <li> that the application server request data from the database</li>
    </ul>
+   <img src="http://i.imgur.com/R8R3sqC.png" alt="port" />
+
   <h3 style="color: #FF645F; margin-left: 40px">
          2. Contribute!
   </h3>
