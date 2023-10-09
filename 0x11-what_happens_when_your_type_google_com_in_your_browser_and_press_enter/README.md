@@ -6,7 +6,7 @@
 </h1>
 </head>
 <body style="font-family: Verdana, Arial, sans-serif">
-   <h2 style="color: white; background-color:RED ">
+   <h2 style="color: green; round-color:RED ">
         Background Context
 
    <h2 style="color: #FF645F; margin-left: 40px">
