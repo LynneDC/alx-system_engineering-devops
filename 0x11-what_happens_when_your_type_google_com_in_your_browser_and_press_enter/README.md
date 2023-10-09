@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<h1>
   <title>What happens when you type google.com in your browser and press Enter</title>
+</h1>
 </head>
 <body style="font-family: Verdana, Arial, sans-serif">
    <h1 style="color: white; background-color:#61b3e7 ">
