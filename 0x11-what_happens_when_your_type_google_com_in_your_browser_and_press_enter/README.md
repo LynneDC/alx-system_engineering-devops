@@ -17,6 +17,8 @@
    <h2 style="color: green; round-color:RED ">
         Background Context
    </h2>
+   <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/298/aJPw3mw.jpg" alt="FULLSTACKE FOR LIFE " />
+
    <p>
        <li>Being ing a Full-Stack Software Engineer means you’re comfortable interacting with any layer of the stack. </li>
        <li>A way to easily assess this is to simply ask an engineer to explain how a software system works.</li>
