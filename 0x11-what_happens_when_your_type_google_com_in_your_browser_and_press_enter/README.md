@@ -8,7 +8,7 @@
 <body style="font-family: Verdana, Arial, sans-serif">
    <h2> DESCRIPTION </h2>
    <p>
-        In full stack development as  a developer you are supposed to be comfortable to answer this famouse questions "what happens when you type www.google.com" in all layers of development. The side we are tuckling here is:
+      In full stack development as  a developer you are supposed to be comfortable to answer this famous question "what happens when you type www.google.com" in all layers of development. The side we are tackling here is:
    <li> Network</li>
    <li> Servers </li>
    <li> Security </li> 
@@ -16,10 +16,19 @@
  
    <h2 style="color: green; round-color:RED ">
         Background Context
+   <p>
+       <li>Being ing a Full-Stack Software Engineer means you’re comfortable interacting with any layer of the stack. </li>
+       <li>A way to easily assess this is to simply ask an engineer to explain how a software system works.</li>
+   </p>
 
    <h2 style="color: #FF645F; margin-left: 40px">
      Requirements
    </h2>
+   <ol>
+      <li> post your blog post on  LinkedIn or Medium  </li>
+      <li>README.md file, at the root of the folder of the project</li>
+   </ol>
+
    <h2 style="color: #FF645F; margin-left: 40px">
 	     Tasks
 	</h2>
