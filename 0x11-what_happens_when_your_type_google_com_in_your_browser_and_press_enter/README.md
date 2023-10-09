@@ -7,9 +7,9 @@
    <h1 style="color: white; background-color:#61b3e7 ">
         Background Context
 
-	<h2 style="color: #FF645F; margin-left: 40px">
-	     Requirements
-	</h2>
+   <h2 style="color: #FF645F; margin-left: 40px">
+     Requirements
+   </h2>
     <h2 style="color: #FF645F; margin-left: 40px">
 	     Tasks
 	</h2>
