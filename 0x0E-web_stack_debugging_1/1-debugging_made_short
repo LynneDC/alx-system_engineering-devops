@@ -33,13 +33,10 @@ defaults
         errorfile 502 /etc/haproxy/errors/502.http
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
-
-frontend http_front
+listen myserver
         bind *:80
-        bind *:443 ssl crt /etc/letsencrypt/live/www.lavishdev.tech/www.lavishdev.tech.pem
-        redirect scheme https unless { ssl_fc }
-        default_backend http_back
-backend http_back
+        bind *:443 ssl crt /etc/haproxy/ssl/www.lavishdev.tech.pem
+        redirect scheme https code 301 if !{ ssl_fc }
         balance roundrobin
         server 251885-web-01 100.26.136.254:80 check
         server 251885-web-02 100.27.2.102:80 check
