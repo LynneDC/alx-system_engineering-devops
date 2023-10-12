@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Install and configure HAproxy on your lb-01 server.
-#Distribute requests using a roundrobin algorithm
-#Make sure that HAproxy can be managed via an init script
+# Installs HAProxy version 1.8 with the following configurations:
+#+    Enables management via the init script.
+#+    Distributes requests using a round-robin algorithm.
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -34,8 +34,8 @@ listen hbnb
     balance roundrobin
     option httpclose
     option forwardfor
-    server 251885-web-01 100.26.136.254 check
-    server 251885-web-02 100.27.2.102 check
+    server 83865-web-52.86.71.142 check
+    server 83865-web-34.203.201.129 check
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
