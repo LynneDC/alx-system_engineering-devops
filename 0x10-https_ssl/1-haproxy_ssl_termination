@@ -17,6 +17,7 @@ global
         ssl-default-bind-ciphersuites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
         ssl-default-bind-options ssl-min-ver TLSv1.2 no-tls-tickets
 
+
 defaults
         log     global
         mode    http
@@ -32,20 +33,20 @@ defaults
         errorfile 502 /etc/haproxy/errors/502.http
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
+listen myserver
+        bind *:80
+        bind *:443 ssl crt /etc/haproxy/ssl/www.lavishdev.tech.pem
+        redirect scheme https code 301 if !{ ssl_fc }
+        balance roundrobin
+        server 251885-web-01 100.26.136.254:80 check
+        server 251885-web-02 100.27.2.102:80 check
 
-frontend load_balancer                                                             
-        bind *:80                                                                  
-        bind :443 ssl crt lavishdev.tech/www.lavishdev.tech.pem                    
-        acl letsencrypt-acl path_beg /.well-known/acme-challenge/                  
-        redirect scheme https if !{ ssl_fc }                                       
-        use_backend letsencrypt-backend if letsencrypt-acl                         
-        default_backend web_server                                                 
-                                                                                   
-backend web_server                                                                 
-        balance roundrobin                                                         
-        redirect scheme https code 301 if !{ ssl_fc }                              
-        server 251885-web-01 100.26.136.254:80 check                               
-        server 251885-web-02 100.27.2.102:80 check                                 
-                                                                                   
-backend letsencrypt-backend                                                        
-        server letsencrypt 127.0.0.1:54321
+frontend http_front
+        bind *:80
+        bind *:443 ssl crt /etc/letsencrypt/live/www.lavishdev.tech/www.lavishdev.tech.pem
+        redirect scheme https unless { ssl_fc }
+        default_backend http_back
+backend http_back
+        balance roundrobin
+        server 251885-web-01 100.26.136.254:80 check
+        server 251885-web-02 100.27.2.102:80 check
