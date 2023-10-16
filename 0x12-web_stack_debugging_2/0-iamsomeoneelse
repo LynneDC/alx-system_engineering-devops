@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Check if an argument was provided
+sudo -u "$1" whoami
