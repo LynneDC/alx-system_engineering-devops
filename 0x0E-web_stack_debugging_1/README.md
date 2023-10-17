@@ -1,4 +1,4 @@
-<H1>Python - Network #0</h1>
+<H1>Web stack debugging #1</h1>
 <h2> DESCRIPTION </h2>
   <P> Web server debugging where you change web port to port 0:80. By changing the contents of sites enabled to be the same as site available. That happens in default file of site-available and enabled folder in server</p>
  <h2>Resources</h2>
