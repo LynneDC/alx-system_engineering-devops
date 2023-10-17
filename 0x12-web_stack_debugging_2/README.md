@@ -19,7 +19,7 @@
 </ul>
 <h2>TASKS : MANDATORY</h2>
 <p><b>0. Run software as another user</b></p>
-<ol>
+<ol><img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/eaeff07a715ff880b1ceb8e863a1d141a74a7f85.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231017%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231017T063004Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=dd9e3bf3e70e328c4e2c955abb752b9c6399549d381285a60cbf5d3212ba20df"alt="ROOT" />
    <ul>
    <li>Write a Bash script accepts one argument</li>
    <li>the script should run the whoami command under the user passed as an argument</li>
