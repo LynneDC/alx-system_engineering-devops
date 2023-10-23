@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" pytthon script that export data to csv"""
 import csv
 import requests
 import sys
