@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""
-Python script that, using this REST AP
-for a given employee ID, returns information about
-TODO list progress
-"""
+"""Python script that, using this REST API"""
 
 
 import json
