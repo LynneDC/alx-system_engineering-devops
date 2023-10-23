@@ -5,18 +5,18 @@ import sys
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print(f"Usage: {sys.argv[0]} EMPLOYEE_ID")
+        print("Usage: {} EMPLOYEE_ID".format(sys.argv[0]))
         sys.exit(1)
 
-    employee_id = sys.argv[1]
-    url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
+    emp_id = sys.argv[1]
+    url = "https://jsonplaceholder.typicode.com/users/{}".format(employee_id)
     response = requests.get(url)
     if response.status_code != 200:
-        print(f"Error: Employee with ID {employee_id} not found.")
+        print("Error: Employee with ID {} not found.".format(emp_id))
         sys.exit(1)
 
     employee_name = response.json().get("name")
-    url = f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}"
+    url = "https://jsonplaceholder.typicode.com/todos?userId={}".format(emp_id)
     response = requests.get(url)
     todos = response.json()
     total_tasks = len(todos)
@@ -26,4 +26,4 @@ if __name__ == '__main__':
     print("Employee {} is done with tasks({}/{}): "
           .format(employee_name, num_completed_tasks, total_tasks))
     for task in completed_tasks:
-        print(f"\t{task.get('title')}")
+        print("\t{}".format(task.get('title')))
