@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-Python script that, using this REST API, for a given employee ID, returns information about his/her TODO list progress.
+Python script that, using this REST API,
+for a given employee ID, returns information about
+TODO list progress.
 """
 
 import json
@@ -28,10 +30,13 @@ if __name__ == '__main__':
     completed_tasks = [todo for todo in todos if todo.get("completed")]
     num_completed_tasks = len(completed_tasks)
 
-    print(f"Employee {employee_name} is done with tasks({num_completed_tasks}/{total_tasks}):")
+    print("Employee {} is done with tasks({}/{}):"
+          .format(employee_name, num_completed_tasks, total_tasks))
     task_list = []
     for task in todos:
-        task_dict = {"task": task.get("title"), "completed": task.get("completed"), "username": employee_name}
+        task_dict = {"task": task.get("title"),
+                     "completed": task.get("completed"),
+                     "username": employee_name}
         task_list.append(task_dict)
     json_data = {employee_id: task_list}
     with open(f"{employee_id}.json", "w") as outfile:
