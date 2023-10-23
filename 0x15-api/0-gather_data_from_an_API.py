@@ -9,7 +9,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     emp_id = sys.argv[1]
-    url = "https://jsonplaceholder.typicode.com/users/{}".format(employee_id)
+    url = "https://jsonplaceholder.typicode.com/users/{}".format(emp_id)
     response = requests.get(url)
     if response.status_code != 200:
         print("Error: Employee with ID {} not found.".format(emp_id))
