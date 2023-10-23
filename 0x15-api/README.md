@@ -54,10 +54,68 @@
 <li>Your code should not be executed when imported (by using <code>if __name__ == &quot;__main__&quot;:</code>)</li>
 </ul>
 
-<h2 class="gap">TASKS</h2>
+<h2 class="gap">TASKS MANDATORY</h2>
 <h3 class="panel-title">
       0. Gather data from an API
 </h3>
+ <p>Write a Python script that, using this <a href="/rltoken/7cr7aLYdaWAZWBKrBKS12A" title="REST API" target="_blank">REST API</a>, for a given employee ID, returns information about his/her TODO list progress.</p>
+<h4>Requirements:</h4>
+
+<ul>
+<li>You must use <code>urllib</code> or <code>requests</code> module</li>
+<li>The script must accept an integer as a parameter, which is the employee ID</li>
+<li>The script must display on the standard output the employee TODO list progress in this exact format:
+
+<ul>
+<li>First line: <code>Employee EMPLOYEE_NAME is done with tasks(NUMBER_OF_DONE_TASKS/TOTAL_NUMBER_OF_TASKS):</code>
+
+<ul>
+<li><code>EMPLOYEE_NAME</code>: name of the employee</li>
+<li><code>NUMBER_OF_DONE_TASKS</code>: number of completed tasks</li>
+<li><code>TOTAL_NUMBER_OF_TASKS</code>: total number of tasks, which is the sum of completed and non-completed tasks</li>
+</ul></li>
+<li>Second and N next lines display the title of completed tasks: <code>TASK_TITLE</code> (with 1 tabulation and 1 space before the <code>TASK_TITLE</code>)</li>
+</ul></li>
+</ul>
+<h3 class="panel-title">
+      1. Export to CSV
+</h3>
+<p>Using what you did in the task #0, extend your Python script to export data in the CSV format.</p>
+
+<h4>Requirements:</h4>
+
+<ul>
+<li>Records all tasks that are owned by this employee</li>
+<li>Format must be: <code>&quot;USER_ID&quot;,&quot;USERNAME&quot;,&quot;TASK_COMPLETED_STATUS&quot;,&quot;TASK_TITLE&quot;</code></li>
+<li>File name must be: <code>USER_ID.csv</code></li>
+</ul>
+
+<h3 class="panel-title">
+      2. Export to JSON
+</h3>
+<p>Using what you did in the task #0, extend your Python script to export data in the JSON format.</p>
+
+<h4>Requirements:</h4>
+
+<ul>
+<li>Records all tasks that are owned by this employee</li>
+<li>Format must be: <code>{ &quot;USER_ID&quot;: [{&quot;task&quot;: &quot;TASK_TITLE&quot;, &quot;completed&quot;: TASK_COMPLETED_STATUS, &quot;username&quot;: &quot;USERNAME&quot;}, {&quot;task&quot;: &quot;TASK_TITLE&quot;, &quot;completed&quot;: TASK_COMPLETED_STATUS, &quot;username&quot;: &quot;USERNAME&quot;}, ... ]}</code></li>
+<li>File name must be: <code>USER_ID.json</code></li>
+</ul>
+
+ <h3 class="panel-title">
+      3. Dictionary of list of dictionaries
+</h3>
+ <p>Using what you did in the task #0, extend your Python script to export data in the JSON format.</p>
+
+<h4>Requirements:</h4>
+
+<ul>
+<li>Records all tasks from all employees</li>
+<li>Format must be: <code>{ &quot;USER_ID&quot;: [ {&quot;username&quot;: &quot;USERNAME&quot;, &quot;task&quot;: &quot;TASK_TITLE&quot;, &quot;completed&quot;: TASK_COMPLETED_STATUS}, {&quot;username&quot;: &quot;USERNAME&quot;, &quot;task&quot;: &quot;TASK_TITLE&quot;, &quot;completed&quot;: TASK_COMPLETED_STATUS}, ... ], &quot;USER_ID&quot;: [ {&quot;username&quot;: &quot;USERNAME&quot;, &quot;task&quot;: &quot;TASK_TITLE&quot;, &quot;completed&quot;: TASK_COMPLETED_STATUS}, {&quot;username&quot;: &quot;USERNAME&quot;, &quot;task&quot;: &quot;TASK_TITLE&quot;, &quot;completed&quot;: TASK_COMPLETED_STATUS}, ... ]}</code></li>
+<li>File name must be: <code>todo_all_employees.json</code></li>
+</ul>
+
 </body>
 </html>
 
