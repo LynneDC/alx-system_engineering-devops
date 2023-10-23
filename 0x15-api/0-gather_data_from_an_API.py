@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Python script that, using this REST API,"""
+"""Returns to-do list information for a given employee ID."""
+import requests
+import sys
+"""Python script that, using this REST API,
 import requests
 import sys
 
@@ -27,4 +30,4 @@ if __name__ == '__main__':
     print(f"Employee {employee_name} is done with tasks(
             {num_completed_tasks}/{total_tasks}): ")
     for task in completed_tasks:
-        print(f"\t{task.get('title')}")
+        print(f"\t{task.get('title')}") """
