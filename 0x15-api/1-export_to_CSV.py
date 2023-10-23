@@ -1,5 +1,5 @@
 #!/usr/python3
-import csv 
+import csv
 import requests
 import sys
 """ pytthon script that export data to csv"""
@@ -22,7 +22,8 @@ if __name__ == '__main__':
     todos = response.json()
 
     with open(f"{emp_id}.csv", mode="w") as csv_file:
-        fieldnames = ["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"]
+        fieldnames = ["USER_ID", "USERNAME",
+                      "TASK_COMPLETED_STATUS", "TASK_TITLE"]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
         writer.writeheader()
@@ -34,5 +35,4 @@ if __name__ == '__main__':
                 "TASK_TITLE": todo["title"]
             })
 
-    print(f"Data exported to {emp_id}.csv")
-
+    print("Data exported to {}.csv".format(emp_id))
