@@ -2,10 +2,6 @@
 """Returns to-do list information for a given employee ID."""
 import requests
 import sys
-"""Python script that, using this REST API,
-import requests
-import sys
-
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
