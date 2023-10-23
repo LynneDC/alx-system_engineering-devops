@@ -22,12 +22,12 @@ if __name__ == '__main__':
     response = requests.get(url)
     todos = response.json()
 
-    with open(f"{emp_id}.csv", mode="w") as csv_file:
+    with open("{}.csv".format(emp_id), mode="w", newline="") as csv_file:
         fieldnames = ["USER_ID", "USERNAME",
                       "TASK_COMPLETED_STATUS", "TASK_TITLE"]
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer = csv.DictWriter(csv_file, quoting=csv.QUOTE_ALL, fieldnames=fieldnames)
 
-        writer.writeheader()
+        #writer.writeheader()
         for todo in todos:
             writer.writerow({
                 "USER_ID": emp_id,
