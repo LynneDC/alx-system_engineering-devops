@@ -1,11 +1,5 @@
 <!DOCTYPE html>
  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="google" content="notranslate">
     <title>0x16. API advanced</title>
 </head>
 <body>
