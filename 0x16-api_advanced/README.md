@@ -1,6 +1,7 @@
 <!DOCTYPE html>
- <head>
-    <title> 0x16. API advanced </title>
+<html lang="en">
+  <head>
+  <h1> 0x16. API advanced </h1>
 </head>
 <body>
 <h2>BACKGROUND CONTEXT</h2>
